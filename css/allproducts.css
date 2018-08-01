@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+/*@import url('https://fonts.googleapis.com/css?family=Roboto');*/
+@import url('general.css');
+@import url('header.css');
+@import url('footer.css');
+
+.account{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 20px;
+	background-color: rgba(0,0,.0,0.1);
+	margin-top: 25px;
+}
+
+.account a,
+.account span{
+	padding: 0 5px;
+	font-size: 18px;
+	font-weight: 600;
+	color: #555555;
+	transition: ease 0.5s;
+}
+
+.account a{
+	text-decoration: none;
+	
+}
+
+.account a:hover{
+	color:#000;
+}
+
+.minimun-order{
+	font-size: 16px;
+	font-weight: 400;
+	color: #777777;
+	width: 100%;
+	text-align: center;
+	margin: 30px;
+}
+
+.tbl-product-list,
+.tbl-product-list .thead,
+.tbl-product-list .tbody{
+	width: 100%;
+}
+
+.tbl-product-list .thead{
+	display: flex;
+	flex-direction: column;
+	border-bottom: 1px solid #777777;
+}
+
+.tbl-product-list .thead .trow{
+	margin: 10px 0;
+}
+
+.tbl-product-list .thead .tcol{
+	color: #777777;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+.tbl-product-list .trow{
+	display: flex;
+	flex-direction: row;
+}
+
+.tbl-product-list .trow .tcol{
+	text-align: center;
+}
+
+.tbl-product-list .trow .psku{
+	width: 115px;
+}
+.tbl-product-list .trow .pcategories{
+	width: 115px;
+}
+.tbl-product-list .trow .pname{
+	flex-grow: 1;
+}
+.tbl-product-list .trow .pquantity{
+	width: 90px;
+}
+.tbl-product-list .trow .pquantity input{
+	text-align: center;
+	border: 0;
+}
+.tbl-product-list .trow .pprice{
+	width: 55px;
+}
+.tbl-product-list .trow .padd-to-cart{
+	width: 170px;
+}
+.tbl-product-list .trow .pcbox{
+	width: 35px;
+}
+
+.tbl-product-list .tbody .trow{
+	padding: 5px 0;
+	align-items: center;
+}
+
+.tbl-product-list .tbody a{
+	text-decoration: none;
+	color: #000;
+	font-weight: 400;
+	font-size: 14px;
+	transition: ease 0.5s;
+}
+
+.tbl-product-list .tbody a:hover{
+	font-weight: 700;
+}
+
+.tbl-product-list .tbody .trow .tcol{
+	color: #000;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.tbl-product-list .tbody .btn-single-add-to-card{
+	width: 90%;
+	height: 35px;
+	background-color: #E0B87E;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 35px;
+	text-shadow: 0 0 3px rgba(0,0,0,0.3);
+	cursor: pointer;
+	transition: ease 0.3s;
+}
+
+.tbl-product-list .tbody .btn-single-add-to-card:hover{
+	filter: brightness(80%);
+}
+
+.tbl-product-list .loading{
+	width: 100%;
+	text-align: center;
+	padding: 40px;
+	line-height: 30px;
+}
+
+.tbl-product-list .loading i{
+	color: #777777;
+	font-size: 26px;
+}
+
+.tbl-product-list .loading h4{
+	color: #999999;
+	font-size: 18px;
+	font-weight: 700;
+}

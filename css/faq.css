@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('general.css');
+@import url('header.css');
+@import url('footer.css');
+
+.content{
+	width: 100%;
+	padding: 50px 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.content > div{
+	width: 48%;
+	display: flex;
+	flex-direction: column;
+}
+
+.content .title{
+	width: 100%;
+	border-bottom: 1px solid rgba(0,0,0,0.3);
+	padding: 15px 0;
+}
+
+.content .title h1{
+	font-size: 20px;
+	font-weight: 700;
+	color: #555555;
+}
+
+.content .subtitle{
+	width: 100%;
+	padding: 40px 0;
+}
+
+.content .subtitle h2{
+	width: 100%;
+	font-size: 21px;
+	font-weight: 400;
+	color: #777777;
+	line-height: 33px;
+}
+
+.accordion,
+.accordion .accordion-item{
+	width: 100%;
+}
+
+.accordion .accordion-item{
+	border-top: 1px solid rgba(0,0,0,0.3);
+}
+
+.accordion .accordion-item.shown > .accordion-title{
+	background-color: rgba(0,0,0,0.05);
+}
+
+.accordion .accordion-item.shown > .accordion-title i{
+	transform: rotate(180deg);
+	color: #e5bf72;
+	text-shadow: 0 0 3px #000;
+}
+
+.accordion .accordion-item.shown > .accordion-title h2{
+	color: #e5bf72;
+	font-weight: 700;
+	text-shadow: 0 0 3px #000;
+}
+
+.accordion .accordion-item .accordion-title{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	cursor: pointer;
+	padding: 15px;
+}
+
+.accordion .accordion-item .accordion-title:hover h2{
+	font-weight: bold;
+}
+
+.accordion .accordion-item .accordion-title i{
+	width: 28px;
+	height: 28px;
+	text-align: center;
+	font-size: 30px;
+	color: #000;
+	transition: ease 0.3s;
+	align-items: start;
+	margin: 0 10px;
+	
+}
+
+.accordion .accordion-item .accordion-title h2{
+	font-size: 18px;
+	color: #000;
+	font-weight: 400;
+	flex-grow: 1;
+}
+
+.accordion .accordion-item .accordion-answer{
+	width: 100%;
+	padding: 15px 10px 15px 60px;
+	display: none;
+}
+
+.accordion .accordion-item .accordion-answer h3{
+	font-size: 16px;
+	color: #777777;
+	font-weight: 400;
+	line-height: 26px;
+}

@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('general.css');
+@import url('header.css');
+@import url('footer.css');
+
+.content{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 70px 10px;
+    border-top: 1px solid rgba(0,0,0,0.3);
+    margin: 50px 0;
+    align-items: center;
+}
+
+.content .title {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 15px;
+    font-size: 27px;
+    font-weight: 700;
+    color: #555555;
+}
+
+.content div {
+    width: 48%;
+}
+
+.content .service-desc h2{
+    font-size: 20px;
+    font-weight: 700;
+    color: #555555;
+    margin-bottom: 20px;
+}
+
+.content .service-desc h4{
+    font-size: 16px;
+    font-weight: 400;
+    color: #777777;
+    line-height: 26px;
+    text-align: justify;
+}
+
+.content .service-image img{
+    width: 100%;
+}
