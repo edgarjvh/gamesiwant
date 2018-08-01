@@ -1,0 +1,207 @@
+header{
+    width: 100%;
+    height: 130px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+}
+
+header #upper-header{
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #fff;
+    font-size: 12px;
+    align-items: center;
+    font-weight: 400;
+}
+
+header #upper-header .account-section{
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header #upper-header .account-section a{
+    flex-grow: 1;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 400;    
+}
+
+header #upper-header .account-section span{
+    color:rgba(255,255,255,0.3);
+}
+
+header #upper-header .account-section a:hover,
+header #upper-header .account-section a>i:hover{
+    text-shadow: 0.5px 0.5px 1px #fff;
+    transition: ease 0s;
+}
+
+header #menu-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+
+header #menu-header .left-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header #menu-header .left-menu img{
+    width: 150px;
+}
+
+header #menu-header .left-menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15px;
+}
+
+header #menu-header .left-menu ul li{
+    list-style: none;
+    height: 40px;
+    line-height: 40px;
+}
+
+header #menu-header a{
+    text-decoration: none;
+    color: #e5bf72;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+header #menu-header .left-menu ul li a,
+header #menu-header .cart-info a{
+    padding: 0 10px;
+    transition: ease 0.5s;
+}
+
+header #menu-header .left-menu ul li:hover > a,
+header #menu-header .cart-info a:hover{
+    color: #fff;
+}
+
+header #menu-header .left-menu ul li a i{
+    font-size: 10px;
+    margin-left: 5px;    
+}
+
+header #menu-header .left-menu ul#main-menu > li{
+    position: relative;
+}
+
+header #menu-header .left-menu ul#main-menu > li .sub-list-container{
+    position: absolute;
+    background-color: #fff;
+    padding: 25px 0;
+    z-index: 100;
+    top: 100%;
+    left: 0;
+    width: 250px;
+    transition: ease 0.5s;
+    display: none;    
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+header #menu-header .left-menu ul#main-menu > li .sub-list-container i{
+    position: absolute;
+    color: #fff;
+    font-size: 24px;
+    top:-15px;
+    left: 50px;
+}
+
+header #menu-header .left-menu ul#main-menu > li .sub-list-container ul{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+}
+
+header #menu-header .left-menu ul#main-menu > li .sub-list-container ul li{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    padding: 10px;
+    transition: ease 0.5s;
+}
+
+header #menu-header .left-menu ul#main-menu > li .sub-list-container ul li a{
+    color:rgba(17,17,17,0.85);
+    font-weight: 400;
+    font-size: 16px;
+    transition: ease 0.5s;
+}
+
+header #menu-header .left-menu ul#main-menu > li .sub-list-container ul li:hover a{
+    font-weight: 700;
+}
+
+header #menu-header .cart-info a{    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header #menu-header .cart-info a #my-bag{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 26px;
+    margin-left: 10px;
+    border: 2px solid #e5bf72;
+    position: relative;    
+    transition: ease 0.5s
+}
+
+header #menu-header .cart-info a #my-bag #cart-counter{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: ease 0.5s
+}
+
+header #menu-header .cart-info a #my-bag .aza{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid #e5bf72;
+    border-radius: 10px 10px 0 0;
+    z-index: 99;
+    transition: ease 0.5s
+}
+
+header #menu-header .cart-info:hover a{
+    color:#fff;
+}
+header #menu-header .cart-info:hover #my-bag{
+    border: 2px solid #fff;    
+}
+header #menu-header .cart-info:hover #my-bag #cart-counter{
+    color:#000;
+    background-color: #fff;
+}
+header #menu-header .cart-info:hover #my-bag .aza{
+    border: 2px solid #fff;
+    top:-40%;
+}

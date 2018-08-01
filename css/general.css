@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Lato', sans-serif;    
+}
+
+.container{
+    width: 97%;
+    max-width: 1080px;
+    margin: 0 auto
+}
+
+section.sec-content{
+    width: 100%;
+}

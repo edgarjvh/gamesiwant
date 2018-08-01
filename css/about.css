@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('general.css');
+@import url('header.css');
+@import url('footer.css');
+
+.title{
+    width: 100%;
+    position: relative;
+    height: 315px;
+
+}
+
+.title .title-bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("../img/aboutbg.jpg") no-repeat ;
+    background-size: cover;
+    filter: brightness(60%);
+}
+
+.title .container{
+    width: 100%;
+    position: absolute;
+    top:75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-weight: 700;
+    font-size: 56px;
+    color:#fff;
+    text-shadow: 0 0 5px #000;
+}
+
+.desc{
+    width: 100%;
+
+}
+
+.desc .container{
+    text-align: center;
+    font-weight: 700;
+    font-size: 21px;
+    color:#777;
+    line-height: 33px;
+    padding: 50px 20px;
+}
+
