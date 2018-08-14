@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('general.css');
+@import url('header.css');
+@import url('footer.css');
+
+.form-register{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 20px 20px 0 20px;
+	border: 1px solid rgba(0,0,0,0.2);
+	margin: 40px 0;
+	border-radius: 5px;
+}
+
+.form-register div{
+	padding: 0 10px;
+}
+
+input{
+	padding: 15px;
+	margin-bottom: 20px;
+	width: 100%;
+	border-radius: 5px;
+	border: 1px solid rgba(0,0,0,0.2);
+	font-size: 12px;
+}
+
+input[type=text]{
+	text-transform: uppercase;
+}
+
+input[type=email]{
+	text-transform: lowercase;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=password]:focus{
+	box-shadow: 0 0 5px dodgerblue;
+}
+
+input[type=text]:hover,
+input[type=email]:hover,
+input[type=password]:hover{
+	box-shadow: 0 0 3px gray;
+}
+
+select {
+	padding: 14px;
+	margin-bottom: 20px;
+	width: 100%;
+	border-radius: 5px;
+	border: 1px solid rgba(0,0,0,0.2);
+}
+
+.w-100{
+	width: 100%;
+	flex-grow: 1;
+}
+.w-50{
+	width: 49%;
+	min-width: 230px;
+	flex-grow: 1;
+}
+.w-33{
+	width: 32%;
+	flex-grow: 1;
+	min-width: 170px;
+}
+
+input[type=submit]{
+	width: 100%;
+	max-width: 150px;
+	float: right;
+	border-radius: 5px;
+	border: 0;
+	background-color: #E7BD7F;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 16px;
+	cursor: pointer;
+	transition: linear 0.3s;
+	margin: 0;
+}
+
+.form-register input[type=submit]:hover{
+	filter: brightness(80%);
+}
+
+.form-register .submit{
+	padding: 20px 10px;
+	border-top: 1px solid rgba(0,0,0,0.2);
+}
+
+::placeholder{
+	font-size: 12px;
+	color: rgba(0,0,0,0.3);
+	text-transform: lowercase;
+}
+
+.form-register label.is-required::after{
+	content: "*";
+	margin-left: 3px;
+	color:red;
+}
+
+.form-register label{
+	font-size: 12px;
+	font-weight: 700;
+	color:#000;
+	line-height: 30px;
+}
+
+.container{
+	position: relative;
+}
+
+.container #register-message{
+	width: 100%;
+	background-color: #fff;
+	text-align: center;
+}
+
+.container #register-message{
+	font-weight: 600;
+	font-size: 14px;
+	transition: opacity 0.3s;
+}
+
+.container #register-message[data-type=normal]{
+	opacity: 0;
+}
+
+.container #register-message[data-type=processing]{
+	opacity: 1;
+	color:darkblue;
+}
+
+.container #register-message[data-type=success]{
+	opacity: 1;
+	color:darkgreen;
+}
+
+.container #register-message[data-type=error]{
+	opacity: 1;
+	color:red;
+}

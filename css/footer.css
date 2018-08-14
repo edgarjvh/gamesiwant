@@ -33,7 +33,7 @@ footer .top .container .left span{
     margin-top: 20px;
     font-size: 13px;
     font-weight: 400;
-    color: #e5bf72;
+    color: #E0B87E;
     line-height: 25px;
     text-align: justify
 }
@@ -58,7 +58,7 @@ footer .top .container .center img{
 footer .top .container .center span{
     font-size: 13px;
     font-weight: 400;
-    color: #e5bf72;
+    color: #E0B87E;
     line-height: 25px;
     text-align: justify;
     margin-left: 20px;
@@ -80,7 +80,7 @@ footer .top .container .right h3{
 footer .top .container .right span{
     font-size: 16px;
     font-weight: 400;
-    color: #e5bf72;
+    color: #E0B87E;
     line-height: 25px;
     text-align: justify;
     margin-bottom: 30px;
@@ -89,7 +89,7 @@ footer .top .container .right span{
 footer .top .container .right a.register{
     text-decoration: none;
     color: #fff;
-    background-color: #e5bf72;
+    background-color: #E0B87E;
     width: 120px;
     padding: 10px 0;
     font-weight: 700;
@@ -100,7 +100,8 @@ footer .top .container .right a.register{
 }
 
 footer .top .container .right a.register:hover{
-    filter: brightness(70%);
+    filter: brightness(80%);
+    color: #000;
 }
 
 footer .top .container .right a.social{
@@ -110,7 +111,6 @@ footer .top .container .right a.social{
     height: 35px;
     text-align: center;
     font-weight: 700;
-    text-align: center;
     font-size: 14px;
     transition: ease 0.5s;
     border: 2px solid #fff;
@@ -143,6 +143,7 @@ footer > .bottom .copyright p{
     margin: 0;
     padding: 0;
     color: #fff;
+    line-height: 65px;
 }
 
 footer > .bottom .copyright p a{

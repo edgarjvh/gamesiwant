@@ -2,10 +2,10 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport"
-              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Games I Want</title>
+        <title>Games I Want | Home</title>
+	    <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
         <link rel="stylesheet" href="css/index.css">
         <link rel="stylesheet" href="fontawesome/css/all.css">
         <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
@@ -68,11 +68,11 @@
                             <a href="newreleases.php"><span>NEW <br> RELEASES</span></a>
                         </div>
                         <div class="right-side all-platforms">
-                            <a href="allproducts.php"><span>ALL PLATFORMS</span></a>
+                            <a href="products.php"><span>ALL PLATFORMS</span></a>
                         </div>
                     </div>
                     <div class="bottom-side email-box">
-                        <a href="contact.php"><span>EMAIL BOX</span></a>
+                        <a href="faq.php"><span>EMAIL BOX</span></a>
                     </div>
                 </div>
                 <div class="right-side">
@@ -98,18 +98,55 @@
                     WE CARRY ALL MAJOR BRANDS AND PLATFORMS <br><br> SHOP BY PLATFORMS
                 </div>
                 <div class="platforms-list">
-                    <div class="platform-info"><span class="helper"></span><img src="img/xboxone.png" alt=""><a href="xboxone.php">Xbox One</a></div>
-                    <div class="platform-info"><span class="helper"></span><img src="img/ps4.png" alt=""><a href="playstation4.php">PlayStation 4</a></div>
-                    <div class="platform-info"><span class="helper"></span><img src="img/wiiu.png" alt=""><a href="wiiu.php">Wii-U Games</a></div>
-                    <div class="platform-info"><span class="helper"></span><img src="img/nintendods.png" alt=""><a href="nintendods.php">Nintendo DS</a></div>
-                    <div class="platform-info"><span class="helper"></span><img src="img/nintendowii.png" alt=""><a href="nintendowii.php">Wii Games</a></div>
-                    <div class="platform-info"><span class="helper"></span><img src="img/ps3.png" alt=""><a href="playstation3.php">PlayStation 3</a></div>
-                    <div class="platform-info"><span class="helper"></span><img src="img/xbox360.png" alt=""><a href="xbox360.php">Xbox 360</a></div>
-                    <div class="platform-info"><span class="helper"></span><img src="img/sonypsp.png" alt=""><a href="sonypsp.php">Sony PSP</a></div>
-                    <div class="platform-info"><span class="helper"></span><img src="img/psvita.png" alt=""><a href="playstationvita.php">PlayStation Vita</a></div>
-                    <div class="platform-info"><span class="helper"></span><img src="img/nintendo3ds.png" alt=""><a href="nintendo3ds.php">Nintendo 3DS</a></div>
-                    <div class="platform-info"><span class="helper"></span><img src="img/ps2.png" alt=""><a href="playstation2.php">PlayStation 2</a></div>
-                    <div class="platform-info"><span class="helper"></span><img src="img/nintendoswitch.png" alt=""><a href="nintendoswitch.php">Nintendo Switch</a></div>
+	                <div class="ribbon-container">
+		                <div class="ribbon"><span>Xbox One</span></div>
+		                <div class="platform-info"><span class="helper"></span><img src="img/xboxone.png" alt="" /><a href="products.php?pl=2"></a></div>
+	                </div>
+	
+	                <div class="ribbon-container">
+		                <div class="ribbon"><span>PlayStation 4</span></div>
+		                <div class="platform-info"><span class="helper"></span><img src="img/ps4.png" alt=""><a href="products.php?pl=1"></a></div>
+	                </div>
+	                <div class="ribbon-container">
+		                <div class="ribbon"><span>Wii-U Games</span></div>
+		                <div class="platform-info"><span class="helper"></span><img src="img/wiiu.png" alt=""><a href="products.php?pl=5"></a></div>
+	                </div>
+	                <div class="ribbon-container">
+		                <div class="ribbon"><span>Nintendo DS</span></div>
+		                <div class="platform-info"><span class="helper"></span><img src="img/nintendods.png" alt=""><a href="products.php?pl=11"></a></div>
+	                </div>
+	                <div class="ribbon-container">
+		                <div class="ribbon"><span>Wii Games</span></div>
+		                <div class="platform-info"><span class="helper"></span><img src="img/nintendowii.png" alt=""><a href="products.php?pl=6"></a></div>
+	                </div>
+	                <div class="ribbon-container">
+		                <div class="ribbon"><span>PlayStation 3</span></div>
+		                <div class="platform-info"><span class="helper"></span><img src="img/ps3.png" alt=""><a href="products.php?pl=4"></a></div>
+	                </div>
+	                <div class="ribbon-container">
+		                <div class="ribbon"><span>Xbox 360</span></div>
+		                <div class="platform-info"><span class="helper"></span><img src="img/xbox360.png" alt=""><a href="products.php?pl=7"></a></div>
+	                </div>
+	                <div class="ribbon-container">
+		                <div class="ribbon"><span>Sony PSP</span></div>
+		                <div class="platform-info"><span class="helper"></span><img src="img/sonypsp.png" alt=""><a href="products.php?pl=12"></a></div>
+	                </div>
+	                <div class="ribbon-container">
+		                <div class="ribbon"><span>PlayStation Vita</span></div>
+		                <div class="platform-info"><span class="helper"></span><img src="img/psvita.png" alt=""><a href="products.php?pl=8"></a></div>
+	                </div>
+	                <div class="ribbon-container">
+		                <div class="ribbon"><span>Nintendo 3DS</span></div>
+		                <div class="platform-info"><span class="helper"></span><img src="img/nintendo3ds.png" alt=""><a href="products.php?pl=9"></a></div>
+	                </div>
+	                <div class="ribbon-container">
+		                <div class="ribbon"><span>PlayStation 2</span></div>
+		                <div class="platform-info"><span class="helper"></span><img src="img/ps2.png" alt=""><a href="products.php?pl=10"></a></div>
+	                </div>
+	                <div class="ribbon-container">
+		                <div class="ribbon"><span>Nintendo Switch</span></div>
+		                <div class="platform-info"><span class="helper"></span><img src="img/nintendoswitch.png" alt=""><a href="products.php?pl=3"></a></div>
+	                </div>
                 </div>
             </div>
         </section>

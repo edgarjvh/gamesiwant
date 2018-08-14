@@ -209,11 +209,12 @@ section#platforms .container .platforms-list .platform-info{
     width: 160px;
     height: 160px;
     position: relative;
-    overflow: hidden;    
     margin-bottom: 30px;
+    overflow: hidden;
     background-color: rgba(0,0,0,0.2); 
     white-space: nowrap;    
-    text-align: center;    
+    text-align: center;
+    box-shadow: 0 2px 3px #000;
 }
 
 section#platforms .container .platforms-list .platform-info .helper {
@@ -227,8 +228,57 @@ section#platforms .container .platforms-list .platform-info:hover img{
 
 }
 
+section#platforms .container .platforms-list .ribbon-container{
+    position: relative;
+}
+
+section#platforms .container .platforms-list .ribbon-container .ribbon {
+    position: absolute;
+    left: -5px; top: -5px;
+    z-index: 1;
+    overflow: hidden;
+    width: 75px; height: 75px;
+    text-align: right;
+}
+section#platforms .container .platforms-list .ribbon-container .ribbon span {
+    font-size: 10px;
+    font-weight: bold;
+    color: #FFF;
+    
+    text-align: center;
+    line-height: 20px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    width: 100px;
+    display: block;
+    background: #79A70A;
+    background: linear-gradient(#F79E05 0%, #8F5408 100%);
+    box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1);
+    position: absolute;
+    top: 19px; left: -21px;
+}
+section#platforms .container .platforms-list .ribbon-container .ribbon span::before {
+    content: "";
+    position: absolute; left: 0px; top: 100%;
+    z-index: -1;
+    border-left: 3px solid #8F5408;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #8F5408;
+}
+section#platforms .container .platforms-list .ribbon-container .ribbon span::after {
+    content: "";
+    position: absolute; right: 0px; top: 100%;
+    z-index: -1;
+    border-left: 3px solid transparent;
+    border-right: 3px solid #8F5408;
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid #8F5408;
+}
+
 section#platforms .container .platforms-list .platform-info a{    
-    width: 100%;    
+    width: 100%;
+    height: 100%;
     color: #fff;    
     text-shadow: 0 0 10px #000;
     font-weight: 700;

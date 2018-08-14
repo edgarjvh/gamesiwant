@@ -111,3 +111,136 @@
 	font-weight: 400;
 	line-height: 26px;
 }
+
+input{
+	padding: 15px;
+	margin-bottom: 20px;
+	width: 100%;
+	border-radius: 5px;
+	border: 1px solid rgba(0,0,0,0.2);
+	font-size: 12px;
+}
+
+.form-contact{
+	margin-top: 40px;
+}
+
+.form-contact textarea{
+	width: 100%;
+	min-height: 150px;
+	resize: vertical;
+	padding: 15px;
+	border-radius: 5px;
+	border: 1px solid rgba(0,0,0,0.2);
+	font-size: 12px;
+}
+
+input[type=text]{
+	text-transform: uppercase;
+}
+
+input[type=email]{
+	text-transform: lowercase;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+textarea{
+	box-shadow: 0 0 5px dodgerblue;
+}
+
+input[type=text]:hover,
+input[type=email]:hover,
+textarea{
+	box-shadow: 0 0 3px gray;
+}
+
+.w-100{
+	width: 100%;
+	flex-grow: 1;
+}
+.w-50{
+	width: 49%;
+	min-width: 230px;
+	flex-grow: 1;
+}
+.w-33{
+	width: 32%;
+	flex-grow: 1;
+	min-width: 170px;
+}
+
+input[type=submit]{
+	width: 100%;
+	max-width: 150px;
+	float: right;
+	border-radius: 5px;
+	border: 0;
+	background-color: #E7BD7F;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 16px;
+	cursor: pointer;
+	transition: linear 0.3s;
+	margin: 0 0 20px 0;
+}
+
+.form-contact input[type=submit]:hover{
+	filter: brightness(80%);
+}
+
+.form-contact .submit{
+	padding: 20px 0;
+	border-top: 1px solid rgba(0,0,0,0.2);
+}
+
+::placeholder{
+	font-size: 12px;
+	color: rgba(0,0,0,0.3);
+	text-transform: lowercase;
+}
+
+.form-contact label.is-required::after{
+	content: "*";
+	margin-left: 3px;
+	color:red;
+}
+
+.form-contact label{
+	font-size: 12px;
+	font-weight: 700;
+	color:#000;
+	line-height: 30px;
+}
+
+.right #contact-message{
+	width: 100%;
+	background-color: #fff;
+	text-align: center;
+}
+
+.right #contact-message{
+	font-weight: 600;
+	font-size: 14px;
+	transition: opacity 0.3s;
+}
+
+.right #contact-message[data-type=normal]{
+	opacity: 0;
+}
+
+.right #contact-message[data-type=processing]{
+	opacity: 1;
+	color:darkblue;
+}
+
+.right #contact-message[data-type=success]{
+	opacity: 1;
+	color:darkgreen;
+}
+
+.right #contact-message[data-type=error]{
+	opacity: 1;
+	color:red;
+}

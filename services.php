@@ -2,8 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Games I Want</title>
     <link rel="stylesheet" href="css/services.css">
@@ -26,10 +24,10 @@ include_once('header.php');
             <img src="img/featureddeals.jpg" alt="">
         </div>
     </div>
-</>
+</div>
 
 <?php
-include_once('footer.php');
+	include_once('footer.php');
 ?>
 <script type="text/javascript" src="js/header.js"></script>
 </body>

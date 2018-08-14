@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('general.css');
+@import url('header.css');
+@import url('footer.css');
+
+.account{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 20px;
+	background-color: rgba(0,0,.0,0.1);
+	margin-top: 25px;
+}
+
+.account a,
+.account span{
+	padding: 0 5px;
+	font-size: 18px;
+	font-weight: 600;
+	color: #555555;
+	transition: ease 0.5s;
+}
+
+.account a{
+	text-decoration: none;
+	
+}
+
+.account a:hover{
+	color:#000;
+}
+
+
+
+
+div.auth{
+	width: 98%;
+	max-width: 400px;
+	margin: 40px auto;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	background-color: rgba(0,0,0,0.1);
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px ;
+}
+
+div.auth .container .title{
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+	padding: 10px;
+	color: #000;
+	font-size: 20px;
+}
+
+div.auth .container input{
+	padding: 15px;
+	margin: 20px 0;
+	width: 100%;
+	border-radius: 5px;
+	border: 1px solid rgba(0,0,0,0.2);
+	font-size: 12px;
+	text-align: center;
+}
+
+div.auth .container input:focus{
+	box-shadow: 0 0 5px dodgerblue;
+}
+div.auth .container input:hover{
+	box-shadow: 0 0 3px gray;
+}
+div.auth .container #btn-access{
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+	padding: 10px;
+	color: #fff;
+	font-size: 20px;
+	background-color: #E0B87E;
+	cursor: pointer;
+	-webkit-transition: all ease 0.3s;
+	-moz-transition: all ease 0.3s;
+	-ms-transition: all ease 0.3s;
+	-o-transition: all ease 0.3s;
+	transition: all ease 0.3s;
+	margin-top: 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid rgba(0,0,0,0.2);
+}
+
+div.auth .container #btn-access:hover{
+	filter: brightness(80%);
+	color: #000;
+	box-shadow: 0 0 3px gray;
+}
+
+
+#auth-message{
+	width: 100%;
+	text-align: center;
+}
+
+#auth-message{
+	font-weight: 600;
+	font-size: 14px;
+	transition: opacity 0.3s;
+}
+
+#auth-message[data-type=normal]{
+	opacity: 0;
+}
+
+#auth-message[data-type=processing]{
+	opacity: 1;
+	color:darkblue;
+}
+
+#auth-message[data-type=success]{
+	opacity: 1;
+	color:darkgreen;
+}
+
+#auth-message[data-type=error]{
+	opacity: 1;
+	color:red;
+}
+
+
+.users{
+	width: 98%;
+	max-width: 1024px;
+	margin: 20px auto 0 auto;
+}
+
+.tbl{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.tbl-head, .tbl-body{
+	width: 100%;
+}
+
+.tbl-body{
+	height: 100%;
+}
+
+.tbl-row{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 10px 5px;
+	
+}
+
+.tbl-head .tbl-row{
+	background-color: rgba(105,105,105,0.8);
+	color: #fff;
+}
+
+.tbl-body .tbl-row{
+	padding: 0 5px;
+	align-items: center;
+	background-color: rgba(255,255,255,1);
+	margin: 5px 0;
+}
+
+.tbl-body .tbl-row.unconfirmed{
+	background-color: rgba(53, 253, 91, 0.7);
+}
+
+.tbl-col{
+	text-align: center;
+}
+
+.tbl-col.first-name,.tbl-col.last-name{
+	width: 16%;
+}
+
+.tbl-col.email{
+	width: 15%;
+}
+
+.tbl-col.phone{
+	width: 15%;
+}
+
+.tbl-col.country{
+	width: 13%;
+}
+
+.tbl-col.since{
+	width: 10%;
+}
+
+.tbl-col.status{
+	width: 15%;
+	text-align: center;
+	position: relative;
+}
+
+.switch{
+	border: double 4px transparent;
+	width: 100px;
+	height: 30px;
+	margin: 2px auto;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	position: relative;
+	background-image: linear-gradient(white, white), radial-gradient(circle at top left, #adadad,#d3d3d3);
+	background-origin: border-box;
+	background-clip: content-box, border-box;
+	cursor: pointer;
+}
+
+.disabling-switch{
+	width: 100px;
+	height: 30px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	position: absolute;
+	background-color: rgba(0,0,0,0.5);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	opacity: 0;
+	display: none;
+	-webkit-transition: opacity ease 0.7s;
+	-moz-transition: opacity ease 0.7s;
+	-ms-transition: opacity ease 0.7s;
+	-o-transition: opacity ease 0.7s;
+	transition: opacity ease 0.7s;
+	align-items: center;
+	justify-content: center;
+}
+
+.disabling-switch i{
+	font-size: 24px;
+	color: #fff;
+	width: 24px;
+	height: 24px;
+}
+
+.switch:hover .roll{
+	filter: brightness(80%);
+}
+
+.switch.active .status-label{
+	text-align: left;
+	background-color: #92d49b;
+}
+
+.switch.active .roll{
+	left: calc(100% - 35px);
+}
+
+.roll{
+	width: 35px;
+	height: 25px;
+	position: absolute;
+	background-color: darkgray;
+	margin: 0;
+	padding: 0;
+	border-radius: 20px;
+	left: 0;
+	top: 50%;
+	transform:translateY(-50%);
+	box-shadow: 1px 1px 5px;
+	-webkit-transition: all ease 0.3s;
+	-moz-transition: all ease 0.3s;
+	-ms-transition: all ease 0.3s;
+	-o-transition: all ease 0.3s;
+	transition: all ease 0.3s;
+}
+
+.status-label{
+	width: 100%;
+	height: 100%;
+	padding-right: 3px;
+	padding-left: 10px;
+	color:#fff;
+	text-shadow: 0.5px 0.5px 2px #000;
+	border-radius: 15px;
+	margin: 0 auto;
+	line-height: 20px;
+	box-shadow: inset 0.8px 1px 2px rgba(0,0,0,0.4);
+	text-align: right;
+	background-color: #d4929b;
+	-webkit-transition: all ease 0.5s;
+	-moz-transition: all ease 0.5s;
+	-ms-transition: all ease 0.5s;
+	-o-transition: all ease 0.5s;
+	transition: all ease 0.5s;
+}

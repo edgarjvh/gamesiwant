@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport"
-	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Games I Want</title>
+	<title>Games I Want | FAQ</title>
+	<link rel="shortcut icon" href="img/favicon.png" type="image/png" />
 	<link rel="stylesheet" href="css/faq.css">
 	<link rel="stylesheet" href="fontawesome/css/all.css">
 	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
@@ -25,6 +24,7 @@ include_once ('header.php');
 			<div class="subtitle">
 				<h2>Please read our FAQ before sending us a message.</h2>
 			</div>
+			<!-- acordion -->
 			<div class="accordion">
 				<div class="accordion-item">
 					<div class="accordion-title">
@@ -195,6 +195,31 @@ include_once ('header.php');
 			<div class="title">
 				<h1>SEND US AN EMAIL</h1>
 			</div>
+			
+			<div class="form-contact">
+				<div class="w-100">
+					<label for="" class="is-required">Your Name</label>
+					<input type="text" id="txt-name" title="Name" placeholder="Your Name" required />
+				</div>
+				<div class="w-100">
+					<label for="" class="is-required">Your Email</label>
+					<input type="email" id="txt-email" title="Email" placeholder="Your Email" required />
+				</div>
+				<div class="w-100">
+					<label for="" class="is-required">Subject</label>
+					<input type="text" id="txt-subject" title="Subject" placeholder="Subject" required />
+				</div>
+				<div class="w-100">
+					<label for="" class="is-required">Your Message</label>
+					<textarea id="txt-message" title="Message" placeholder="Your Message" required></textarea>
+				</div>
+				
+				<div class="w-100 submit">
+					<input type="submit" value="send" id="btn-submit">
+				</div>
+			</div>
+			
+			<div id="contact-message" data-type="normal"></div>
 		</div>
 	</div>
 </div>

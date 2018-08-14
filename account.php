@@ -1,7 +1,11 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Edgar Villasmil
- * Date: 31/07/2018
- * Time: 07:04 AM
- */
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+
+</body>
+</html>
